@@ -1,20 +1,16 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
+
+/**
+ * _isdigit - check if a character is a digit
+ * @c: char to be checked
+ *
+ * Return: 1 for a character that will ba a digit or 0 for any else
+ */
 
 int _isdigit(int c)
 {
-    return isdigit(c);
-}
-#include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
-
-int _strlen(char *s)
-{
-    return strlen(s);
+	if (c >= 48 && c <= 57)
+	return (1);
+	else
+	return (0);
 }
